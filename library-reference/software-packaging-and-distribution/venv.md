@@ -76,6 +76,6 @@
 >
 > - Because of this, environments are inherently non-portable, in the general case.
 >
-> - You should always have a simple means of recreating an environment (for example, if you have a requirements file requirements.txt, you can invoke pip install -r requirements.txt using the environment’s pip to install all of the packages needed by the environment).
+> - You should always have a simple means of recreating an environment (for example, if you have a requirements file `requirements.txt`, you can invoke `pip install -r requirements.txt` using the environment’s `pip` to install all of the packages needed by the environment).
 
 - You can deactivate a virtual environment by typing `deactivate` in your shell.
