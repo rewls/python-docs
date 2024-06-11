@@ -20,6 +20,6 @@
 
 - Extending and embedding
 
-- Python's C API
+- [Python's C API](pythons-c-api)
 
 - FAQs

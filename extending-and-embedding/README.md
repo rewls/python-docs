@@ -20,4 +20,4 @@
 
 ## Embedding the CPython runtime in a larger application
 
-- [1. Embedding Python in Another Application](01-embedding-python-in-another-application.md)
+- [1. Embedding Python in Another Application](01-embedding-python-in-another-application)
