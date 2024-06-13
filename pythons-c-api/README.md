@@ -20,7 +20,7 @@
 
 - [Initialization, Finalization, and Threads](initialization-finalization-and-threads.md)
 
-- Python Initialization Configuration
+- [Python Initialization Configuration](python-initialization-configuration.md)
 
 - Memory Management
 

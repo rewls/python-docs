@@ -60,16 +60,26 @@
 
 - Bugs and caveats:
 
-    - The destruction of modeuls and objects in modules is done in random order; this may cause desctructors (`__del__()` methods) to fail when they depend on other objects or modules.
+    - The destruction of modules and objects in modules is done in random order; this may cause desctructors (`__del__()` methods) to fail when they depend on other objects or modules.
 
     - Small amounts of memory allocated by the Python interpreter may not be freed (if you fin a leak, please report it).
 
     - Memory tied up in circular references between objects is not freed.
 
-- Some memory allocated by extension modules may not be freed.
+    - Some memory allocated by extension modules may not be freed.
 
-- Some extensions may not work properly if their initialization routine is called more than once; this can happen if an application calls `Py_Initialize()` and `Py_FinalizeEx()` more than once.
+    - Some extensions may not work properly if their initialization routine is called more than once; this can happen if an application calls `Py_Initialize()` and `Py_FinalizeEx()` more than once.
+
+        - numpy
 
 - Raises an auditing event `cpython._PySys_ClearAuditHooks` with no arguments.
 
 > Added in version 3.6.
+
+## Process-wide parameters
+
+### `void Py_SetPath(const wchar_t *)`
+
+- Part of the Stable ABI since version 3.7.
+
+- This API is kept for backward compatibility: setting `PyConfig.module_search_paths` and `PyConfig.module_search_paths_set` should be used instead, see Python Initialization Configuration.
